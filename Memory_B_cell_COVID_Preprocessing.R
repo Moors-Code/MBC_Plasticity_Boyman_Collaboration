@@ -1681,7 +1681,7 @@ Bmem@meta.data$named.clusters[Bmem@meta.data$seurat_clusters==6 & Bmem@meta.data
 
 # Fig.5.A.1
 DimPlot(Bmem,reduction = "wnn.umap",group.by = "named.clusters", pt.size = 0.5, 
-        cols = rev(c("#DBC35E","#228833","#4477AA","#AA3377","#EE6677")))+
+        cols = c("#c2c1c0","#228833","#4477AA","#AA3377","#DBC35E"))+
   theme(text = element_text(size = 20)) + NoAxes()+ggtitle("")# Export 4x8
 
 Bmem@meta.data$named.clusters <- factor(Bmem@meta.data$named.clusters, levels = c("Unswitched","CD27low RM","CD27high RM","Atypical","Activated"))

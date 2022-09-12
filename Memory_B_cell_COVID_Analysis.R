@@ -763,7 +763,7 @@ DoHeatmap(Bmem.subset, features = Features,group.colors = c("#DBC35E","#228833",
 
 # Making a better heatmap where the heatmap rows are split and clustered - using ComplexHeatmap
 # Define categories
-BCR_signaling <-c('TCL1A', 'IGHD', 'IGHM', 'MS4A1', 'CD79A', 'CD19', 'CD22', 'FCGR2B', 'FCRL5', 'FCRL2', 'FCRL3', 
+BCR_signaling <-c('TCL1A', 'IGHM', 'MS4A1', 'CD79A', 'CD19', 'CD22', 'FCGR2B', 'FCRL5', 'FCRL2', 'FCRL3', 
                   'LAPTM5', 'GRAP2', 'DAPP1', 'SYK', 'MAP3K8')
 Antigen_presentation <- c('HLA-DPA1', 'HLA-DPB1', 'HLA-DRB1', 'HLA-DRB5', 'CD86', 'IFI30', 'LAIR1', 'LILRB1', 'LILRB2',
                           'CD83', 'CD40', 'CD74')
@@ -797,11 +797,11 @@ column_split <- factor(column_split, levels = c("Unswitched","CD27low RM","CD27h
                                                 "Activated","Atypical"))
 
 row_split = rep("BCR Signaling", nrow(heatmap.matrix))
-row_split[17:28] = "Antigen Presentation"
-row_split[29:37] = "Chemokine Signaling"
-row_split[38:44] = "Cytokine Signaling"
-row_split[45:56] = "Transcription factors"
-row_split[57:65] = "Surface Molecules"
+row_split[16:27] = "Antigen Presentation"
+row_split[28:36] = "Chemokine Signaling"
+row_split[37:43] = "Cytokine Signaling"
+row_split[44:55] = "Transcription factors"
+row_split[56:64] = "Surface Molecules"
 row_split <- factor(row_split, levels = c("Surface Molecules","Antigen Presentation","BCR Signaling",
                                           "Chemokine Signaling","Cytokine Signaling",
                                           "Transcription factors"))
@@ -815,7 +815,7 @@ map <- Heatmap(heatmap.matrix, cluster_columns = F, show_column_names = F,
         column_split = column_split,row_split = row_split,border = TRUE,
         column_gap = unit(1, "mm"),col=col_fun,name = "Expression",
         cluster_row_slices = F,use_raster = F,column_title_rot = 90,row_title_rot = 0,
-        row_names_gp = gpar(fontsize = 8),column_names_gp = gpar(fontsize=8)) # Export 10x8
+        row_names_gp = gpar(fontsize = 8),column_names_gp = gpar(fontsize=8),width=15) # Export 10x8
 
 draw(map, padding = unit(c(5, 2, 8, 2), "mm")) #bottom, left, top, right paddings
 
@@ -1466,13 +1466,13 @@ plot_cells(Bmem_cds,
            label_groups_by_cluster=FALSE,
            label_leaves=FALSE, 
            label_branch_points=FALSE,group_label_size = 5,label_cell_groups=F,
-           label_principal_points = F,cell_size = 0.4)+ scale_color_manual(values = rev(c("#DBC35E","#228833","#4477AA","#AA3377","#EE6677")))+
+           label_principal_points = F,cell_size = 0.4)+ scale_color_manual(values = c("#c2c1c0","#228833","#4477AA","#AA3377","#DBC35E"))+
            ggtitle("Monocle Clustering and Trajectory\nColored by Subsets")+ black.axis.text()+
     theme(plot.margin = margin(t = 2,  # Top margin
                              r = 15,  # Right margin
                              b = 2,  # Bottom margin
                              l = 2))+ # Left margin
-  center.title() # Export 5x7
+  center.title() # Export 5x7 # #c2c1c0
 
 # Creating plots for a subset of the cds object that only contains bait positive cells
 Bait.positives <- colnames(Bmem_cds)[colData(Bmem_cds)$bait.positive=="yes"]
@@ -1483,7 +1483,7 @@ plot_cells(Bmem_cds_subset,
            label_groups_by_cluster=FALSE,
            label_leaves=FALSE, 
            label_branch_points=FALSE,group_label_size = 5,label_cell_groups=F,
-           label_principal_points = F,cell_size = 0.4)+ scale_color_manual(values = rev(c("#DBC35E","#228833","#4477AA","#AA3377","#EE6677")))+
+           label_principal_points = F,cell_size = 0.4)+ scale_color_manual(values = c("#c2c1c0","#228833","#4477AA","#AA3377","#DBC35E"))+
   ggtitle("Monocle Clustering and Trajectory\nColored by Subsets, Bait positive cells only")+ black.axis.text()+
   theme(plot.margin = margin(t = 2,  # Top margin
                              r = 15,  # Right margin

@@ -755,9 +755,9 @@ Matrix[3,] <- c(38,41) # Unswitched
 Matrix[4,] <- c(41,75) # CD27+ RM
 Matrix[5,] <- c(77,86) # CD27- RM
 
-circos.initialize(sectors = sectors, xlim = Matrix)
+circos.initialize(sectors = sectors, xlim = Matrix) # Export 5x5
 
-circos.track(ylim=c(0,1), bg.col=c("#EE6677","#AA3377","#DBC35E","#4477AA","cornsilk"))
+circos.track(ylim=c(0,1), bg.col=c("#DBC35E","#AA3377","#c2c1c0","#4477AA","#228833"))
 circos.text(11.5, 1.5, "Activated", sector.index = "Activated", track.index = 1,cex=1.2, facing = "bending")
 circos.text(30.5, 1.5, "Atypical", sector.index = "Atypical", track.index = 1,cex=1.2, facing = "bending")
 circos.text(39.5, 1.5, "Unswitched", sector.index = "Unswitched", track.index = 1,cex=1.2, facing = "bending")
@@ -771,29 +771,29 @@ circos.link(sector.index1 = "CD27+ RM",point1 = c(41,42),sector.index2 = "Atypic
 circos.link(sector.index1 = "Activated",point1 = c(0,1),sector.index2 = "Atypical",point2 = c(24,25),directional = 1,arr.type="big.arrow",col=add_transparency("#AA3377", 0.3),border = "black")
 # 147_8 splitter
 circos.link(sector.index1 = "CD27+ RM",point1 = c(42,43),sector.index2 = "CD27+ RM",point2 = c(60,61),directional = 1,arr.type="big.arrow",col=add_transparency("#4477AA", 0.3),border = "black")
-circos.link(sector.index1 = "CD27+ RM",point1 = c(42,43),sector.index2 = "Activated",point2 = c(1,2),directional = 1,arr.type="big.arrow",col=add_transparency("#EE6677", 0.3),border = "black")
+circos.link(sector.index1 = "CD27+ RM",point1 = c(42,43),sector.index2 = "Activated",point2 = c(1,2),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
 # 149_10
 circos.link(sector.index1 = "CD27+ RM",point1 = c(43,44),sector.index2 = "Atypical",point2 = c(25,27),directional = 1,arr.type="big.arrow",col=add_transparency("#AA3377", 0.3),border = "black")
 # 159_414 splitter
 circos.link(sector.index1 = "CD27+ RM",point1 = c(44,45),sector.index2 = "Atypical",point2 = c(27,28),directional = 1,arr.type="big.arrow",col=add_transparency("#AA3377", 0.3),border = "black")
-circos.link(sector.index1 = "CD27+ RM",point1 = c(44,45),sector.index2 = "Activated",point2 = c(2,3),directional = 1,arr.type="big.arrow",col=add_transparency("#EE6677", 0.3),border = "black")
+circos.link(sector.index1 = "CD27+ RM",point1 = c(44,45),sector.index2 = "Activated",point2 = c(2,3),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
 # 160_313
-circos.link(sector.index1 = "CD27+ RM",point1 = c(45,46),sector.index2 = "Activated",point2 = c(3,4),directional = 1,arr.type="big.arrow",col=add_transparency("#EE6677", 0.3),border = "black")
+circos.link(sector.index1 = "CD27+ RM",point1 = c(45,46),sector.index2 = "Activated",point2 = c(3,4),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
 # 205_139
-circos.link(sector.index1 = "CD27- RM",point1 = c(77,78),sector.index2 = "Activated",point2 = c(4,5),directional = 1,arr.type="big.arrow",col=add_transparency("#EE6677", 0.3),border = "black")
+circos.link(sector.index1 = "CD27- RM",point1 = c(77,78),sector.index2 = "Activated",point2 = c(4,5),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
 # 233_4
 circos.link(sector.index1 = "CD27+ RM",point1 = c(46,47),sector.index2 = "Atypical",point2 = c(28,29),directional = 1,arr.type="big.arrow",col=add_transparency("#AA3377", 0.3),border = "black")
 # 238_43
-circos.link(sector.index1 = "CD27+ RM",point1 = c(47,48),sector.index2 = "Activated",point2 = c(5,6),directional = 1,arr.type="big.arrow",col=add_transparency("#EE6677", 0.3),border = "black")
+circos.link(sector.index1 = "CD27+ RM",point1 = c(47,48),sector.index2 = "Activated",point2 = c(5,6),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
 # 251_325
-circos.link(sector.index1 = "Activated",point1 = c(6,7),sector.index2 = "Activated",point2 = c(18,19),directional = 1,arr.type="big.arrow",col=add_transparency("#EE6677", 0.3),border = "black")
+circos.link(sector.index1 = "Activated",point1 = c(6,7),sector.index2 = "Activated",point2 = c(18,19),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
 # 267_293
 circos.link(sector.index1 = "CD27+ RM",point1 = c(48,49),sector.index2 = "CD27+ RM",point2 = c(65,66),directional = 1,arr.type="big.arrow",col=add_transparency("#4477AA", 0.3),border = "black")
 # 285_88
 circos.link(sector.index1 = "Activated",point1 = c(7,8),sector.index2 = "Atypical",point2 = c(29,30),directional = 1,arr.type="big.arrow",col=add_transparency("#AA3377", 0.3),border = "black")
 # 29_0 splitter
 circos.link(sector.index1 = "CD27+ RM",point1 = c(49,50),sector.index2 = "CD27+ RM",point2 = c(66,67),directional = 1,arr.type="big.arrow",col=add_transparency("#4477AA", 0.3),border = "black")
-circos.link(sector.index1 = "CD27+ RM",point1 = c(49,50),sector.index2 = "Activated",point2 = c(8,9),directional = 1,arr.type="big.arrow",col=add_transparency("#EE6677", 0.3),border = "black")
+circos.link(sector.index1 = "CD27+ RM",point1 = c(49,50),sector.index2 = "Activated",point2 = c(8,9),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
 # 29_7
 circos.link(sector.index1 = "CD27+ RM",point1 = c(50,51),sector.index2 = "CD27+ RM",point2 = c(71,72),directional = 1,arr.type="big.arrow",col=add_transparency("#4477AA", 0.3),border = "black")
 # 313_89
@@ -803,21 +803,21 @@ circos.link(sector.index1 = "CD27- RM",point1 = c(78,79),sector.index2 = "Atypic
 # 322_198
 circos.link(sector.index1 = "CD27- RM",point1 = c(79,80),sector.index2 = "Atypical",point2 = c(31,32),directional = 1,arr.type="big.arrow",col=add_transparency("#AA3377", 0.3),border = "black")
 # 351_492
-circos.link(sector.index1 = "CD27- RM",point1 = c(80,81),sector.index2 = "Activated",point2 = c(10,11),directional = 1,arr.type="big.arrow",col=add_transparency("#EE6677", 0.3),border = "black")
+circos.link(sector.index1 = "CD27- RM",point1 = c(80,81),sector.index2 = "Activated",point2 = c(10,11),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
 # 357_26
 circos.link(sector.index1 = "Activated",point1 = c(11,12),sector.index2 = "Atypical",point2 = c(32,33),directional = 1,arr.type="big.arrow",col=add_transparency("#AA3377", 0.3),border = "black")
 # 358_69 splitter
-circos.link(sector.index1 = "Activated",point1 = c(12,13),sector.index2 = "Unswitched",point2 = c(38,39),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
+circos.link(sector.index1 = "Activated",point1 = c(12,13),sector.index2 = "Unswitched",point2 = c(38,39),directional = 1,arr.type="big.arrow",col=add_transparency("#c2c1c0", 0.3),border = "black")
 circos.link(sector.index1 = "Activated",point1 = c(12,13),sector.index2 = "CD27+ RM",point2 = c(52,54),directional = 1,arr.type="big.arrow",col=add_transparency("#4477AA", 0.3),border = "black")
-circos.link(sector.index1 = "Activated",point1 = c(12,13),sector.index2 = "Activated",point2 = c(20,22),directional = 1,arr.type="big.arrow",col=add_transparency("#EE6677", 0.3),border = "black")
+circos.link(sector.index1 = "Activated",point1 = c(12,13),sector.index2 = "Activated",point2 = c(20,22),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
 # 368_22 splitter
-circos.link(sector.index1 = "Unswitched",point1 = c(39,40),sector.index2 = "Unswitched",point2 = c(40,41),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
+circos.link(sector.index1 = "Unswitched",point1 = c(39,40),sector.index2 = "Unswitched",point2 = c(40,41),directional = 1,arr.type="big.arrow",col=add_transparency("#c2c1c0", 0.3),border = "black")
 circos.link(sector.index1 = "Unswitched",point1 = c(39,40),sector.index2 = "CD27+ RM",point2 = c(54,56),directional = 1,arr.type="big.arrow",col=add_transparency("#4477AA", 0.3),border = "black")
-circos.link(sector.index1 = "Unswitched",point1 = c(39,40),sector.index2 = "Activated",point2 = c(13,15),directional = 1,arr.type="big.arrow",col=add_transparency("#EE6677", 0.3),border = "black")
+circos.link(sector.index1 = "Unswitched",point1 = c(39,40),sector.index2 = "Activated",point2 = c(13,15),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
 circos.link(sector.index1 = "Unswitched",point1 = c(39,40),sector.index2 = "Atypical",point2 = c(33,34),directional = 1,arr.type="big.arrow",col=add_transparency("#AA3377", 0.3),border = "black")
 # 402_82 splitter
 circos.link(sector.index1 = "CD27- RM",point1 = c(81,82),sector.index2 = "CD27+ RM",point2 = c(56,57),directional = 1,arr.type="big.arrow",col=add_transparency("#4477AA", 0.3),border = "black")
-circos.link(sector.index1 = "CD27- RM",point1 = c(81,82),sector.index2 = "Activated",point2 = c(15,16),directional = 1,arr.type="big.arrow",col=add_transparency("#EE6677", 0.3),border = "black")
+circos.link(sector.index1 = "CD27- RM",point1 = c(81,82),sector.index2 = "Activated",point2 = c(15,16),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
 circos.link(sector.index1 = "CD27- RM",point1 = c(81,82),sector.index2 = "Atypical",point2 = c(34,35),directional = 1,arr.type="big.arrow",col=add_transparency("#AA3377", 0.3),border = "black")
 # 41_363
 circos.link(sector.index1 = "CD27+ RM",point1 = c(57,58),sector.index2 = "Atypical",point2 = c(35,36),directional = 1,arr.type="big.arrow",col=add_transparency("#AA3377", 0.3),border = "black")
@@ -826,7 +826,7 @@ circos.link(sector.index1 = "CD27- RM",point1 = c(82,83),sector.index2 = "CD27+ 
 # 428_306
 circos.link(sector.index1 = "CD27- RM",point1 = c(83,84),sector.index2 = "CD27+ RM",point2 = c(61,62),directional = 1,arr.type="big.arrow",col=add_transparency("#4477AA", 0.3),border = "black")
 # 47_128
-circos.link(sector.index1 = "CD27+ RM",point1 = c(62,63),sector.index2 = "Activated",point2 = c(16,18),directional = 1,arr.type="big.arrow",col=add_transparency("#EE6677", 0.3),border = "black")
+circos.link(sector.index1 = "CD27+ RM",point1 = c(62,63),sector.index2 = "Activated",point2 = c(16,18),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
 # 48_229
 circos.link(sector.index1 = "CD27+ RM",point1 = c(63,64),sector.index2 = "Atypical",point2 = c(36,37),directional = 1,arr.type="big.arrow",col=add_transparency("#AA3377", 0.3),border = "black")
 circos.link(sector.index1 = "CD27- RM",point1 = c(84,85),sector.index2 = "Atypical",point2 = c(36,37),directional = 1,arr.type="big.arrow",col=add_transparency("#AA3377", 0.3),border = "black")
@@ -836,14 +836,14 @@ circos.link(sector.index1 = "CD27+ RM",point1 = c(67,70),sector.index2 = "CD27+ 
 circos.link(sector.index1 = "CD27+ RM",point1 = c(64,65),sector.index2 = "Atypical",point2 = c(37,38),directional = 1,arr.type="big.arrow",col=add_transparency("#AA3377", 0.3),border = "black")
 # 85_142 splitter
 circos.link(sector.index1 = "CD27- RM",point1 = c(85,86),sector.index2 = "CD27+ RM",point2 = c(70,71),directional = 1,arr.type="big.arrow",col=add_transparency("#4477AA", 0.3),border = "black")
-circos.link(sector.index1 = "CD27- RM",point1 = c(85,86),sector.index2 = "Activated",point2 = c(19,20),directional = 1,arr.type="big.arrow",col=add_transparency("#EE6677", 0.3),border = "black")
+circos.link(sector.index1 = "CD27- RM",point1 = c(85,86),sector.index2 = "Activated",point2 = c(19,20),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
 
 
 
 # Second version of the plot, making only clones that split into different subsets colorful. The other clones are white.
 circos.initialize(sectors = sectors, xlim = Matrix)
 
-circos.track(ylim=c(0,1), bg.col=c("#EE6677","#AA3377","#DBC35E","#4477AA","cornsilk"))
+circos.track(ylim=c(0,1), bg.col=c("#DBC35E","#AA3377","#c2c1c0","#4477AA","#228833"))
 circos.text(11.5, 1.5, "Activated", sector.index = "Activated", track.index = 1,cex=1.2, facing = "bending")
 circos.text(30.5, 1.5, "Atypical", sector.index = "Atypical", track.index = 1,cex=1.2, facing = "bending")
 circos.text(39.5, 1.5, "Unswitched", sector.index = "Unswitched", track.index = 1,cex=1.2, facing = "bending")
@@ -857,12 +857,12 @@ circos.link(sector.index1 = "CD27+ RM",point1 = c(41,42),sector.index2 = "Atypic
 circos.link(sector.index1 = "Activated",point1 = c(0,1),sector.index2 = "Atypical",point2 = c(24,25),directional = 1,arr.type="big.arrow",col=add_transparency("gray97", 0.3),border = "black")
 # 147_8 splitter
 circos.link(sector.index1 = "CD27+ RM",point1 = c(42,43),sector.index2 = "CD27+ RM",point2 = c(61,62),directional = 1,arr.type="big.arrow",col=add_transparency("#4477AA", 0.3),border = "black")
-circos.link(sector.index1 = "CD27+ RM",point1 = c(42,43),sector.index2 = "Activated",point2 = c(1,2),directional = 1,arr.type="big.arrow",col=add_transparency("#EE6677", 0.3),border = "black")
+circos.link(sector.index1 = "CD27+ RM",point1 = c(42,43),sector.index2 = "Activated",point2 = c(1,2),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
 # 149_10
 circos.link(sector.index1 = "CD27+ RM",point1 = c(43,44),sector.index2 = "Atypical",point2 = c(25,27),directional = 1,arr.type="big.arrow",col=add_transparency("gray97", 0.3),border = "black")
 # 159_414 splitter
 circos.link(sector.index1 = "CD27+ RM",point1 = c(44,45),sector.index2 = "Atypical",point2 = c(27,28),directional = 1,arr.type="big.arrow",col=add_transparency("#AA3377", 0.3),border = "black")
-circos.link(sector.index1 = "CD27+ RM",point1 = c(44,45),sector.index2 = "Activated",point2 = c(2,3),directional = 1,arr.type="big.arrow",col=add_transparency("#EE6677", 0.3),border = "black")
+circos.link(sector.index1 = "CD27+ RM",point1 = c(44,45),sector.index2 = "Activated",point2 = c(2,3),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
 # 160_313
 circos.link(sector.index1 = "CD27+ RM",point1 = c(45,46),sector.index2 = "Activated",point2 = c(3,4),directional = 1,arr.type="big.arrow",col=add_transparency("gray97", 0.3),border = "black")
 # 205_139
@@ -879,7 +879,7 @@ circos.link(sector.index1 = "CD27+ RM",point1 = c(48,49),sector.index2 = "CD27+ 
 circos.link(sector.index1 = "Activated",point1 = c(7,8),sector.index2 = "Atypical",point2 = c(29,30),directional = 1,arr.type="big.arrow",col=add_transparency("gray97", 0.3),border = "black")
 # 29_0 splitter
 circos.link(sector.index1 = "CD27+ RM",point1 = c(49,50),sector.index2 = "CD27+ RM",point2 = c(67,68),directional = 1,arr.type="big.arrow",col=add_transparency("#4477AA", 0.3),border = "black")
-circos.link(sector.index1 = "CD27+ RM",point1 = c(49,50),sector.index2 = "Activated",point2 = c(8,9),directional = 1,arr.type="big.arrow",col=add_transparency("#EE6677", 0.3),border = "black")
+circos.link(sector.index1 = "CD27+ RM",point1 = c(49,50),sector.index2 = "Activated",point2 = c(8,9),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
 # 29_7
 circos.link(sector.index1 = "CD27+ RM",point1 = c(50,51),sector.index2 = "CD27+ RM",point2 = c(72,73),directional = 1,arr.type="big.arrow",col=add_transparency("gray97", 0.3),border = "black")
 # 313_89
@@ -895,17 +895,17 @@ circos.link(sector.index1 = "Activated",point1 = c(11,12),sector.index2 = "Atypi
 # 358_69 splitter
 circos.link(sector.index1 = "Activated",point1 = c(12,13),sector.index2 = "Unswitched",point2 = c(38,39),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
 circos.link(sector.index1 = "Activated",point1 = c(12,13),sector.index2 = "CD27+ RM",point2 = c(52,54),directional = 1,arr.type="big.arrow",col=add_transparency("#4477AA", 0.3),border = "black")
-circos.link(sector.index1 = "Activated",point1 = c(12,13),sector.index2 = "Activated",point2 = c(20,22),directional = 1,arr.type="big.arrow",col=add_transparency("#EE6677", 0.3),border = "black")
+circos.link(sector.index1 = "Activated",point1 = c(12,13),sector.index2 = "Activated",point2 = c(20,22),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
 # 368_22 splitter
 circos.link(sector.index1 = "Unswitched",point1 = c(39,40),sector.index2 = "Unswitched",point2 = c(40,41),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
 circos.link(sector.index1 = "Unswitched",point1 = c(39,40),sector.index2 = "CD27+ RM",point2 = c(54,56),directional = 1,arr.type="big.arrow",col=add_transparency("#4477AA", 0.3),border = "black")
-circos.link(sector.index1 = "Unswitched",point1 = c(39,40),sector.index2 = "Activated",point2 = c(13,15),directional = 1,arr.type="big.arrow",col=add_transparency("#EE6677", 0.3),border = "black")
+circos.link(sector.index1 = "Unswitched",point1 = c(39,40),sector.index2 = "Activated",point2 = c(13,15),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
 circos.link(sector.index1 = "Unswitched",point1 = c(39,40),sector.index2 = "Atypical",point2 = c(33,34),directional = 1,arr.type="big.arrow",col=add_transparency("#AA3377", 0.3),border = "black")
 # 38_2
 circos.link(sector.index1 = "CD27+ RM",point1 = c(56,57),sector.index2 = "CD27+ RM",point2 = c(73,75),directional = 1,arr.type="big.arrow",col=add_transparency("gray97", 0.3),border = "black")
 # 402_82 splitter
 circos.link(sector.index1 = "CD27- RM",point1 = c(84,85),sector.index2 = "CD27+ RM",point2 = c(57,58),directional = 1,arr.type="big.arrow",col=add_transparency("#4477AA", 0.3),border = "black")
-circos.link(sector.index1 = "CD27- RM",point1 = c(84,85),sector.index2 = "Activated",point2 = c(15,16),directional = 1,arr.type="big.arrow",col=add_transparency("#EE6677", 0.3),border = "black")
+circos.link(sector.index1 = "CD27- RM",point1 = c(84,85),sector.index2 = "Activated",point2 = c(15,16),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
 circos.link(sector.index1 = "CD27- RM",point1 = c(84,85),sector.index2 = "Atypical",point2 = c(34,35),directional = 1,arr.type="big.arrow",col=add_transparency("#AA3377", 0.3),border = "black")
 # 41_363
 circos.link(sector.index1 = "CD27+ RM",point1 = c(58,59),sector.index2 = "Atypical",point2 = c(35,36),directional = 1,arr.type="big.arrow",col=add_transparency("gray97", 0.3),border = "black")
@@ -924,14 +924,14 @@ circos.link(sector.index1 = "CD27+ RM",point1 = c(68,71),sector.index2 = "CD27+ 
 circos.link(sector.index1 = "CD27+ RM",point1 = c(65,66),sector.index2 = "Atypical",point2 = c(37,38),directional = 1,arr.type="big.arrow",col=add_transparency("gray97", 0.3),border = "black")
 # 85_142 splitter
 circos.link(sector.index1 = "CD27- RM",point1 = c(88,89),sector.index2 = "CD27+ RM",point2 = c(71,72),directional = 1,arr.type="big.arrow",col=add_transparency("#4477AA", 0.3),border = "black")
-circos.link(sector.index1 = "CD27- RM",point1 = c(88,89),sector.index2 = "Activated",point2 = c(19,20),directional = 1,arr.type="big.arrow",col=add_transparency("#EE6677", 0.3),border = "black")
+circos.link(sector.index1 = "CD27- RM",point1 = c(88,89),sector.index2 = "Activated",point2 = c(19,20),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
 
 
 
 # Third version of the Circos plot, only splitting clones are shown, the other clones are invisible.
 circos.initialize(sectors = sectors, xlim = Matrix)
 
-circos.track(ylim=c(0,1), bg.col=c("#EE6677","#AA3377","#DBC35E","#4477AA","cornsilk"))
+circos.track(ylim=c(0,1), bg.col=c("#DBC35E","#AA3377","#c2c1c0","#4477AA","#228833"))
 circos.text(11.5, 1.5, "Activated", sector.index = "Activated", track.index = 1,cex=1.2, facing = "bending")
 circos.text(30.5, 1.5, "Atypical", sector.index = "Atypical", track.index = 1,cex=1.2, facing = "bending")
 circos.text(39.5, 1.5, "Unswitched", sector.index = "Unswitched", track.index = 1,cex=1.2, facing = "bending")
@@ -941,29 +941,29 @@ circos.text(81.5, 1.5, "CD27- RM", sector.index = "CD27- RM", track.index = 1,ce
 
 # 147_8 splitter
 circos.link(sector.index1 = "CD27+ RM",point1 = c(42,43),sector.index2 = "CD27+ RM",point2 = c(60,61),directional = 1,arr.type="big.arrow",col=add_transparency("#4477AA", 0.3),border = "black")
-circos.link(sector.index1 = "CD27+ RM",point1 = c(42,43),sector.index2 = "Activated",point2 = c(1,2),directional = 1,arr.type="big.arrow",col=add_transparency("#EE6677", 0.3),border = "black")
+circos.link(sector.index1 = "CD27+ RM",point1 = c(42,43),sector.index2 = "Activated",point2 = c(1,2),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
 # 159_414 splitter
 circos.link(sector.index1 = "CD27+ RM",point1 = c(44,45),sector.index2 = "Atypical",point2 = c(27,28),directional = 1,arr.type="big.arrow",col=add_transparency("#AA3377", 0.3),border = "black")
-circos.link(sector.index1 = "CD27+ RM",point1 = c(44,45),sector.index2 = "Activated",point2 = c(2,3),directional = 1,arr.type="big.arrow",col=add_transparency("#EE6677", 0.3),border = "black")
+circos.link(sector.index1 = "CD27+ RM",point1 = c(44,45),sector.index2 = "Activated",point2 = c(2,3),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
 # 29_0 splitter
 circos.link(sector.index1 = "CD27+ RM",point1 = c(49,50),sector.index2 = "CD27+ RM",point2 = c(66,67),directional = 1,arr.type="big.arrow",col=add_transparency("#4477AA", 0.3),border = "black")
-circos.link(sector.index1 = "CD27+ RM",point1 = c(49,50),sector.index2 = "Activated",point2 = c(8,9),directional = 1,arr.type="big.arrow",col=add_transparency("#EE6677", 0.3),border = "black")
+circos.link(sector.index1 = "CD27+ RM",point1 = c(49,50),sector.index2 = "Activated",point2 = c(8,9),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
 # 358_69 splitter
-circos.link(sector.index1 = "Activated",point1 = c(12,13),sector.index2 = "Unswitched",point2 = c(38,39),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
+circos.link(sector.index1 = "Activated",point1 = c(12,13),sector.index2 = "Unswitched",point2 = c(38,39),directional = 1,arr.type="big.arrow",col=add_transparency("#c2c1c0", 0.3),border = "black")
 circos.link(sector.index1 = "Activated",point1 = c(12,13),sector.index2 = "CD27+ RM",point2 = c(52,54),directional = 1,arr.type="big.arrow",col=add_transparency("#4477AA", 0.3),border = "black")
-circos.link(sector.index1 = "Activated",point1 = c(12,13),sector.index2 = "Activated",point2 = c(20,22),directional = 1,arr.type="big.arrow",col=add_transparency("#EE6677", 0.3),border = "black")
+circos.link(sector.index1 = "Activated",point1 = c(12,13),sector.index2 = "Activated",point2 = c(20,22),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
 # 368_22 splitter
-circos.link(sector.index1 = "Unswitched",point1 = c(39,40),sector.index2 = "Unswitched",point2 = c(40,41),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
+circos.link(sector.index1 = "Unswitched",point1 = c(39,40),sector.index2 = "Unswitched",point2 = c(40,41),directional = 1,arr.type="big.arrow",col=add_transparency("#c2c1c0", 0.3),border = "black")
 circos.link(sector.index1 = "Unswitched",point1 = c(39,40),sector.index2 = "CD27+ RM",point2 = c(54,56),directional = 1,arr.type="big.arrow",col=add_transparency("#4477AA", 0.3),border = "black")
-circos.link(sector.index1 = "Unswitched",point1 = c(39,40),sector.index2 = "Activated",point2 = c(13,15),directional = 1,arr.type="big.arrow",col=add_transparency("#EE6677", 0.3),border = "black")
+circos.link(sector.index1 = "Unswitched",point1 = c(39,40),sector.index2 = "Activated",point2 = c(13,15),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
 circos.link(sector.index1 = "Unswitched",point1 = c(39,40),sector.index2 = "Atypical",point2 = c(33,34),directional = 1,arr.type="big.arrow",col=add_transparency("#AA3377", 0.3),border = "black")
 # 402_82 splitter
 circos.link(sector.index1 = "CD27- RM",point1 = c(81,82),sector.index2 = "CD27+ RM",point2 = c(56,57),directional = 1,arr.type="big.arrow",col=add_transparency("#4477AA", 0.3),border = "black")
-circos.link(sector.index1 = "CD27- RM",point1 = c(81,82),sector.index2 = "Activated",point2 = c(15,16),directional = 1,arr.type="big.arrow",col=add_transparency("#EE6677", 0.3),border = "black")
+circos.link(sector.index1 = "CD27- RM",point1 = c(81,82),sector.index2 = "Activated",point2 = c(15,16),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
 circos.link(sector.index1 = "CD27- RM",point1 = c(81,82),sector.index2 = "Atypical",point2 = c(34,35),directional = 1,arr.type="big.arrow",col=add_transparency("#AA3377", 0.3),border = "black")
 # 85_142 splitter
 circos.link(sector.index1 = "CD27- RM",point1 = c(85,86),sector.index2 = "CD27+ RM",point2 = c(70,71),directional = 1,arr.type="big.arrow",col=add_transparency("#4477AA", 0.3),border = "black")
-circos.link(sector.index1 = "CD27- RM",point1 = c(85,86),sector.index2 = "Activated",point2 = c(19,20),directional = 1,arr.type="big.arrow",col=add_transparency("#EE6677", 0.3),border = "black")
+circos.link(sector.index1 = "CD27- RM",point1 = c(85,86),sector.index2 = "Activated",point2 = c(19,20),directional = 1,arr.type="big.arrow",col=add_transparency("#DBC35E", 0.3),border = "black")
 
 remove(Matrix,Persistents,sectors)
 
@@ -1144,7 +1144,7 @@ ggplot(True_Persistents, aes(fill=factor(named.clusters, levels=c("Atypical","Ac
   geom_bar(position="fill", stat="identity",colour="black")+theme_classic()+ 
   theme(text = element_text(size = 15),plot.title = element_text(hjust = 0.5), plot.subtitle = element_text(hjust = 0.5))+
   labs(x = "Subset percentages", y="")+scale_x_continuous(labels=scales::percent)+labs(fill = "Subset")+
-  scale_fill_manual(values=rev(c("#DBC35E","#228833","#4477AA","#EE6677","#AA3377")))+ theme(text = element_text(size = 17))+ 
+  scale_fill_manual(values=rev(c("#DBC35E","#228833","#4477AA","#DBC35E","#AA3377")))+ theme(text = element_text(size = 17))+ 
   ggtitle("Subsets of cells belonging to persistent clones \n before and after vaccination")+black.axis.text() # Export 5x10
 
 
@@ -1523,13 +1523,13 @@ setwd("~/NAS/Jan/Experiments and Data/210801 - Exp 035 - Profiling of COVID vacc
 venn.diagram(
   x = list(Unswitched.vector, CD27low_RM.vector, CD27high_RM.vector,Activated.vector,Atypical.vector),
   category.names = c("Unswitched" , "CD27low RM" , "CD27high RM","Activated","Atypical"), filename = 'Clonal.overlap.between.subsets.12months.png', output=T,
-  imagetype = "png", height = 3000, width = 3000, cat.pos = c(0,0,-115,115,0),cat.dist=c(0.2,0.2,0.25,0.2,0.2),fill=c("#DBC35E","#228833","#4477AA","#EE6677","#AA3377"))
+  imagetype = "png", height = 3000, width = 3000, cat.pos = c(0,0,-115,115,0),cat.dist=c(0.2,0.2,0.25,0.2,0.2),fill=c("#DBC35E","#228833","#4477AA","#DBC35E","#AA3377"))
 
 # Only CD27hig RM vs Activated
 venn.diagram(
   x = list(CD27high_RM.vector,Activated.vector),
   category.names = c("CD27high RM","Activated"), filename = 'Clonal.overlap.between.RM.and.Activated.12months.png', output=T,
-  imagetype = "png", height = 3000, width = 3000,fill=c("#4477AA","#EE6677"),cat.pos=c(0,0))
+  imagetype = "png", height = 3000, width = 3000,fill=c("#4477AA","#DBC35E"),cat.pos=c(0,0))
 
 # Only CD27high vs Atypical
 venn.diagram(
