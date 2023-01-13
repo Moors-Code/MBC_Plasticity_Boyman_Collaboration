@@ -9,7 +9,7 @@ by Zurbuchen and Michler et al.
 
 ## Data availability
 
-The data is deposited at zenodo.org under access number:
+The data is deposited at zenodo.org under access number: 10.5281/zenodo.7463895
 
 ## Code structure
 
