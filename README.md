@@ -5,7 +5,7 @@ This code was used to analyze the single cell sequencing data for the project
 
 "Fate and plasticity of B cell memory and recall response against SARS-CoV-2 in humans" 
 
-by Zurbuchen and Michler et al. 
+by Y. Zurbuchen and J. Michler et al. 
 
 ## Data availability
 
