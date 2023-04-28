@@ -3,7 +3,8 @@
 ## Citation
 This code was used to analyze the single cell sequencing data for the project 
 
-"Fate and plasticity of B cell memory and recall response against SARS-CoV-2 in humans" 
+"Human memory B cells show plasticity and adopt multiple fates upon recall response to SARS-CoV-2" 
+DOI: https://doi.org/10.1038/s41590-023-01497-y
 
 by Y. Zurbuchen and J. Michler et al. 
 
